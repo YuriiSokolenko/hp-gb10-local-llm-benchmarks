@@ -1,6 +1,16 @@
-# Local Coding LLMs on NVIDIA GB10
+# Local Coding LLMs on an NVIDIA GB10 / DGX Spark-Class Computer
 
-A reproducible local benchmark of four large coding-oriented model configurations on a single NVIDIA GB10 system, using the same **LiveBench Coding** release and an OpenAI-compatible inference API.
+This benchmark tests large local coding LLMs on an **NVIDIA GB10 Grace Blackwell AI computer — the same core compute platform used by NVIDIA DGX Spark**.
+
+The physical machine used for these tests is an **HP ZGX Nano G1n AI Station** (HP product CZ2V8UT#ABA). In practical terms, it is HP's OEM counterpart to NVIDIA DGX Spark: it uses the same NVIDIA GB10 Grace Blackwell Superchip, the same 128 GB coherent unified-memory architecture, NVIDIA DGX OS, and the same class of compact desktop AI-compute design.
+
+HP product page:  
+https://www.hp.com/us-en/shop/pdp/hp-zgx-nano-g1n-ai-station-p-cz2v8ut-aba-1
+
+NVIDIA DGX Spark reference system:  
+https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+
+So, throughout this report, **"GB10 system" means the NVIDIA GB10 / DGX Spark-class platform; our concrete unit is the HP ZGX Nano G1n implementation of that platform.**
 
 **Benchmark date:** September 2026  
 **LiveBench release:** `2024-11-25`  
@@ -8,7 +18,7 @@ A reproducible local benchmark of four large coding-oriented model configuration
 **Client concurrency:** 4  
 **Max output:** 32,768 tokens/request  
 **Benchmark client:** separate Intel N150 mini-PC  
-**Inference host:** HP ZGX Nano / NVIDIA GB10, 128 GB unified memory
+**Inference computer:** HP ZGX Nano G1n / NVIDIA GB10 Grace Blackwell / 128 GB unified memory
 
 > Scope: these results describe this exact LiveBench Coding release, serving stack, quantization, sampling configuration and hardware. They are not a universal ranking of the models.
 
@@ -39,13 +49,44 @@ A reproducible local benchmark of four large coding-oriented model configuration
 
 ## Hardware
 
-### Inference host
+### NVIDIA GB10 / DGX Spark-class inference computer
 
-- HP ZGX Nano
-- NVIDIA GB10 Grace Blackwell
-- 128 GB unified LPDDR5x memory (Linux reported ~121 GiB usable)
-- CUDA 13.0
-- Direct OpenAI-compatible API on port `3009`
+The LLM inference machine is based on NVIDIA's **GB10 Grace Blackwell** desktop AI platform. NVIDIA's own implementation is the **DGX Spark**. Our unit is the **HP ZGX Nano G1n AI Station**, an OEM system built around the same GB10 Superchip and DGX software platform.
+
+This distinction matters because the benchmark is fundamentally a test of what the **NVIDIA GB10 platform** can do locally; the box on our desk happens to be HP's implementation rather than an NVIDIA-branded DGX Spark.
+
+#### Exact machine used
+
+| Component | HP ZGX Nano G1n used in this benchmark |
+|---|---|
+| Product | **HP ZGX Nano G1n AI Station** |
+| HP product number | **CZ2V8UT#ABA** |
+| Compute platform | **NVIDIA GB10 Grace Blackwell Superchip** |
+| CPU | **20-core Arm** — 10× Cortex-X925 + 10× Cortex-A725 |
+| GPU | **NVIDIA Blackwell architecture** |
+| AI performance | **Up to 1 PFLOP FP4 / 1,000 TOPS FP4** |
+| System memory | **128 GB LPDDR5x coherent unified memory** |
+| Memory interface | **256-bit** |
+| Memory bandwidth | **273 GB/s** |
+| Storage | **4 TB NVMe M.2 SSD** |
+| Networking | **10 GbE RJ-45 + 2× QSFP up to 200 Gbps** |
+| Wireless | **Wi-Fi 7** |
+| Power supply | **240 W external USB-C adapter** |
+| OS | **NVIDIA DGX OS (Ubuntu-based)** |
+| Form factor | compact desktop, approximately **15 × 15 × 5.1 cm** |
+| Weight | about **1.25 kg**, configuration-dependent |
+| Benchmark API | OpenAI-compatible endpoint on port `3009` |
+| Software observed during tests | CUDA 13.0; vLLM and llama.cpp depending on model |
+
+Linux reported approximately **121 GiB usable RAM** from the nominal 128 GB coherent unified-memory pool.
+
+The key property for these experiments is the **single 128 GB coherent memory pool shared by CPU and GPU**. That is what makes it possible to run ~75–104 GiB model checkpoints, large KV caches and 200k-class contexts on a tiny desktop system without a discrete-GPU VRAM boundary.
+
+Official hardware references:
+
+- HP ZGX Nano G1n: https://www.hp.com/us-en/shop/pdp/hp-zgx-nano-g1n-ai-station-p-cz2v8ut-aba-1
+- HP technical specifications: https://support.hp.com/us-en/document/ish_13212147-13212192-16
+- NVIDIA DGX Spark: https://www.nvidia.com/en-us/products/workstations/dgx-spark/
 
 ### Benchmark client
 
