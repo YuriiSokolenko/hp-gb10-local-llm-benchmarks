@@ -15,20 +15,20 @@ So, throughout this report, **"GB10 system" means the NVIDIA GB10 / DGX Spark-cl
 ### NVIDIA reference system vs. the HP system used here
 
 > **Official manufacturer images — not AI-generated.**  
-> Left: NVIDIA's official DGX Spark media asset from NVIDIA Newsroom.  
+> Left: NVIDIA DGX Spark Founders Edition product image.  
 > Right: HP's official product image for the HP ZGX Nano G1n.
 
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="https://nvidianews.nvidia.com/_gallery/get_file/?file_id=67d925823d6332a746ff3d63" alt="NVIDIA DGX Spark — official NVIDIA Newsroom image" width="520">
+      <img src="https://vishalperipherals.com/cdn/shop/files/DGX-Spark.png?v=1769164576&width=1445" alt="NVIDIA DGX Spark Founders Edition" width="520">
     </td>
     <td align="center" width="50%">
       <img src="https://hp.widen.net/content/msaniswk8a/webp/msaniswk8a.png?color=ffffff00&dpi=72&h=430&w=573" alt="HP ZGX Nano G1n — official HP product image" width="520">
     </td>
   </tr>
   <tr>
-    <td align="center"><strong>NVIDIA DGX Spark</strong><br><sub>Official NVIDIA Newsroom image</sub></td>
+    <td align="center"><strong>NVIDIA DGX Spark</strong><br><sub>Founders Edition product image</sub></td>
     <td align="center"><strong>HP ZGX Nano G1n</strong><br><sub>Exact OEM system family used for this benchmark</sub></td>
   </tr>
 </table>
