@@ -33,9 +33,9 @@ So, throughout this report, **"GB10 system" means the NVIDIA GB10 / DGX Spark-cl
   </tr>
 </table>
 
-Official image sources:
-- NVIDIA DGX Spark media asset: https://nvidianews.nvidia.com/file/nvidia-dgx-spark
-- HP ZGX Nano G1n product image: https://www.hp.com/us-en/shop/pdp/hp-zgx-nano-g1n-ai-station-p-cz2v8ut-aba-1
+Official manufacturer websites:
+- NVIDIA DGX Spark: https://www.nvidia.com/en-us/products/workstations/dgx-spark/
+- HP ZGX Nano G1n: https://www.hp.com/us-en/shop/pdp/hp-zgx-nano-g1n-ai-station-p-cz2v8ut-aba-1
 
 **Benchmark date:** September 2026  
 **LiveBench release:** `2024-11-25`  
