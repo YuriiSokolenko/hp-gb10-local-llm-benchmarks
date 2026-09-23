@@ -1,9 +1,34 @@
 {
   "report_date": "2026-09-23",
-  "hardware": "HP ZGX Nano / NVIDIA GB10 / 128 GB unified memory",
+  "hardware": {
+    "system": "HP ZGX Nano G1n AI Station",
+    "platform": "NVIDIA GB10 Grace Blackwell",
+    "nominal_unified_memory_gb": 128,
+    "linux_visible_ram_bytes": 130596184064,
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.17.0-1018-nvidia",
+    "nvidia_driver": "580.159.03",
+    "cuda_sdk": "13.0.3",
+    "docker": "29.2.1"
+  },
+  "benchmark_client": {
+    "cpu": "Intel N150",
+    "os": "Ubuntu 26.04 LTS",
+    "ram_bytes": 15985524736,
+    "docker": "29.5.3"
+  },
   "benchmark": "LiveBench Coding",
   "release": "2024-11-25",
+  "livebench_commit": "1263ee472f4b9ac3833c0d2f6ad50dd3747fd1df",
+  "livebench_image_id": "sha256:0fc3818ba0ed91a5753f3f87a5c2ec7601031580c4659482f1ea95588aee8934",
   "questions": 128,
+  "lcb_generation_questions": 78,
+  "coding_completion_questions": 50,
   "parallel_requests": 4,
-  "max_tokens": 32768
+  "max_tokens": 32768,
+  "temperature": 1.0,
+  "streaming": false,
+  "resume": true,
+  "incremental_grading": false,
+  "timeout_seconds": 7200
 }
