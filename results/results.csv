@@ -1,5 +1,5 @@
-model,backend,quantization,checkpoint_size_gib,overall,lcb_generation,coding_completion,wall_seconds,avg_request_seconds,output_tokens,observed_aggregate_tok_s,observed_temp_c,observed_power_w
-Qwen3.8-Flash-Next GGUF UD-Q4_K_XL,llama.cpp,UD-Q4_K_XL,103.69,80.6,69.231,92.0,27347.147428512573,837.76640625,639747.0,,,
-Qwen3.8-Flash-Next NVFP4,vLLM,NVFP4,,77.6,69.231,86.0,22886.77598810196,705.97421875,1563453.0,55.2,,
-Laguna S 2.1 GGUF UD-Q6_K_XL,llama.cpp,UD-Q6_K_XL,99.73,67.0,82.051,52.0,32165.702576875687,1001.03984375,1227729.0,39.0,69.0,54.0
-NVIDIA Nemotron 3 Super 120B-A12B NVFP4,vLLM 0.27.1,NVFP4,74.85,65.8,75.641,56.0,,,,45.0,63.0,42.0
+model,backend,quantization,model_size_gib,context,parallel,server_version,overall,lcb_generation,coding_completion,wall_seconds,wall_hms,sum_request_seconds,avg_request_seconds,p50_request_seconds,p90_request_seconds,p95_request_seconds,input_tokens,output_tokens,api_errors,max_token_observations,generation_throughput_note
+Qwen3.8-Flash-Next GGUF,llama.cpp,UD-Q4_K_XL,103.688477337,262144,4,"0.4.1-dev build 11043 / 18a04f09c24616898792bcfaa17f3550bdc78912",80.6,69.231,92.0,27347.147429,07:35:47.147,107234.10,837.766,228.705,3009.867,3399.027,77879,639747,14,14,"10.824 tok/s per-request avg; 10.276 token-weighted"
+Qwen3.8-Flash-Next NVFP4,vLLM,ModelOpt NVFP4 + PLE,108.029092543,262144,4,0.1.dev20073+g8e685d198,77.6,69.231,86.0,22886.775988,06:21:26.776,90364.70,705.974,290.320,2297.717,2317.573,79172,1563453,15,20,"55.842 tok/s periodic-log avg; 61.2 peak sample"
+Laguna S 2.1 GGUF,llama.cpp,UD-Q6_K_XL,99.725674421,204800,4,"0.4.1-dev build 11043 / 18a04f09c24616898792bcfaa17f3550bdc78912",67.0,82.051,52.0,32165.702577,08:56:05.703,128133.10,1001.040,918.725,2080.626,2462.934,91396,1227729,0,0,"9.656 tok/s per-request avg; 9.602 token-weighted"
+NVIDIA Nemotron 3 Super 120B-A12B NVFP4,vLLM,NVFP4 (modelopt_mixed),74.801918916,204800,4,0.27.1,65.8,75.641,56.0,23705.240721,06:35:05.241,94402.06,737.516,250.955,2943.017,2952.072,86183,1049505,0,15,"44.114 tok/s periodic-log avg; 46.0 peak sample"
