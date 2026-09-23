@@ -12,7 +12,7 @@ A reproducible local benchmark of four large coding-oriented model configuration
 
 > Scope: these results describe this exact LiveBench Coding release, serving stack, quantization, sampling configuration and hardware. They are not a universal ranking of the models.
 
-![Overall score](assets/overall-score.png)
+![Overall score](assets/overall-score.svg)
 
 ## Results
 
@@ -25,7 +25,7 @@ A reproducible local benchmark of four large coding-oriented model configuration
 
 \* `Wall span` is measured from the first saved answer timestamp to the last saved answer timestamp, not from shell command start.
 
-![Task breakdown](assets/task-breakdown.png)
+![Task breakdown](assets/task-breakdown.svg)
 
 ### Main observations
 
@@ -35,7 +35,7 @@ A reproducible local benchmark of four large coding-oriented model configuration
 4. **Nemotron 3 Super was more balanced than Laguna on completion but still completion-limited**: `75.641 generation / 56.0 completion / 65.8 overall`.
 5. The result shows why overall score alone can hide materially different coding behavior: Laguna and Nemotron beat Qwen on generation, while Qwen dominated code completion.
 
-![Wall time](assets/wall-time.png)
+![Wall time](assets/wall-time.svg)
 
 ## Hardware
 
@@ -312,9 +312,9 @@ For a coding agent that edits and continues existing code, `coding_completion` m
 .
 ├── README.md
 ├── assets/
-│   ├── overall-score.png
-│   ├── task-breakdown.png
-│   └── wall-time.png
+│   ├── overall-score.svg
+│   ├── task-breakdown.svg
+│   └── wall-time.svg
 ├── results/
 │   ├── metadata.json
 │   └── results.csv
