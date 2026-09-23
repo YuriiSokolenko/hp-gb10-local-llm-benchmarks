@@ -1,0 +1,11 @@
+display_name: "qwen3.8-flash-next-gguf"
+api_name:
+  openai: "qwen3.8-flash-next-gguf"
+default_provider: openai
+api_kwargs:
+  openai:
+    top_p: 0.95
+    extra_body:
+      top_k: 20
+      chat_template_kwargs:
+        reasoning_effort: xhigh
