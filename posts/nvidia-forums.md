@@ -1,6 +1,10 @@
-# LiveBench Coding comparison on a single NVIDIA GB10
+# LiveBench Coding comparison on an NVIDIA GB10 / DGX Spark-class system
 
-I tested four large local coding-model configurations on one GB10 using a separate N150 machine as the LiveBench client.
+I tested four large local coding-model configurations on the **NVIDIA GB10 Grace Blackwell platform**.
+
+The physical machine is an **HP ZGX Nano G1n AI Station**, HP's OEM counterpart to NVIDIA DGX Spark. It uses the same NVIDIA GB10 Grace Blackwell Superchip with a 20-core Arm CPU, Blackwell GPU, 128 GB coherent unified LPDDR5x memory and 273 GB/s memory bandwidth.
+
+A separate Intel N150 machine ran the LiveBench client.
 
 Configuration: LiveBench Coding release 2024-11-25, 128 questions, four concurrent OpenAI-compatible requests, 32,768 max output tokens.
 
