@@ -1,0 +1,11 @@
+display_name: "nvidia/nemotron-3-super"
+api_name:
+  openai: "nvidia/nemotron-3-super"
+default_provider: openai
+api_kwargs:
+  openai:
+    top_p: 0.95
+    extra_body:
+      chat_template_kwargs:
+        enable_thinking: true
+        force_nonempty_content: true
