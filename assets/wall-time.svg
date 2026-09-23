@@ -1,9 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <style>text{font-family:system-ui,Arial,sans-serif;fill:#111}.title{font-size:28px;font-weight:700}.label{font-size:18px}.value{font-size:18px;font-weight:700}.bar{fill:#0f766e}</style>
 <rect width="100%" height="100%" fill="white"/>
 <text x="40" y="45" class="title">Full 128-question Wall Span</text>
-<text x="40" y="130" class="label">Qwen NVFP4</text><rect x="300" y="108" width="382" height="30" class="bar"/><text x="695" y="130" class="value">6:21:27</text>
-<text x="40" y="230" class="label">Qwen GGUF</text><rect x="300" y="208" width="456" height="30" class="bar"/><text x="770" y="230" class="value">7:35:47</text>
-<text x="40" y="330" class="label">Laguna Q6</text><rect x="300" y="308" width="536" height="30" class="bar"/><text x="850" y="330" class="value">8:56:06</text>
-<text x="40" y="430" class="label">Nemotron</text><text x="300" y="430" class="value">not yet extracted</text>
+<text x="40" y="120" class="label">Qwen NVFP4</text><rect x="300" y="98" width="382" height="30" class="bar"/><text x="695" y="120" class="value">6:21:26.776</text>
+<text x="40" y="220" class="label">Nemotron NVFP4</text><rect x="300" y="198" width="395" height="30" class="bar"/><text x="708" y="220" class="value">6:35:05.241</text>
+<text x="40" y="320" class="label">Qwen GGUF</text><rect x="300" y="298" width="456" height="30" class="bar"/><text x="770" y="320" class="value">7:35:47.147</text>
+<text x="40" y="420" class="label">Laguna Q6</text><rect x="300" y="398" width="536" height="30" class="bar"/><text x="850" y="420" class="value">8:56:05.703</text>
+<text x="40" y="505" class="label">Measured from first to last saved answer timestamp</text>
 </svg>
