@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="560" viewBox="0 0 1050 560">
+<style>text{font-family:system-ui,Arial,sans-serif;fill:#111}.title{font-size:28px;font-weight:700}.label{font-size:17px}.legend{font-size:16px}.g{fill:#2563eb}.c{fill:#f59e0b}</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="40" y="45" class="title">LiveBench Coding — Task Breakdown</text>
+<rect x="700" y="25" width="18" height="18" class="g"/><text x="725" y="40" class="legend">LCB_generation</text>
+<rect x="865" y="25" width="18" height="18" class="c"/><text x="890" y="40" class="legend">coding_completion</text>
+<text x="40" y="120" class="label">Qwen GGUF</text><rect x="250" y="92" width="346" height="24" class="g"/><rect x="250" y="122" width="460" height="24" class="c"/><text x="605" y="111" class="label">69.231</text><text x="720" y="141" class="label">92</text>
+<text x="40" y="220" class="label">Qwen NVFP4</text><rect x="250" y="192" width="346" height="24" class="g"/><rect x="250" y="222" width="430" height="24" class="c"/><text x="605" y="211" class="label">69.231</text><text x="690" y="241" class="label">86</text>
+<text x="40" y="320" class="label">Laguna Q6</text><rect x="250" y="292" width="410" height="24" class="g"/><rect x="250" y="322" width="260" height="24" class="c"/><text x="670" y="311" class="label">82.051</text><text x="520" y="341" class="label">52</text>
+<text x="40" y="420" class="label">Nemotron</text><rect x="250" y="392" width="378" height="24" class="g"/><rect x="250" y="422" width="280" height="24" class="c"/><text x="638" y="411" class="label">75.641</text><text x="540" y="441" class="label">56</text>
+</svg>
