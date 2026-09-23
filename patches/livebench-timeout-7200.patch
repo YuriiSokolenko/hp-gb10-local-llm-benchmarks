@@ -1,0 +1,4 @@
+diff --git a/livebench/model/completions.py b/livebench/model/completions.py
+@@ -23,7 +23,7 @@
+-TIMEOUT = 1800
++TIMEOUT = 7200
