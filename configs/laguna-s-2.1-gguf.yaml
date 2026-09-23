@@ -1,0 +1,10 @@
+display_name: "laguna-s-2.1-gguf"
+api_name:
+  openai: "laguna-s-2.1-gguf"
+default_provider: openai
+api_kwargs:
+  openai:
+    top_p: 1.0
+    extra_body:
+      top_k: 20
+      min_p: 0.0
